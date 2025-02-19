@@ -1,0 +1,251 @@
+/* Resetear márgenes y bordes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+button.cta-btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.cta-btn:hover {
+    background-color:rgb(136, 255, 0);
+}
+
+/* Sección de características */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.service {
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+/* Animación de aparición */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo para la sección de contacto */
+.contact-info {
+    background-color: #FF6347;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Animación de la sección de contacto */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.image-gallery {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+/* Efecto Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Encabezado */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 10px;
+}
+
+/* Galería de imágenes */
+.image-gallery {
+    padding: 20px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Botón */
+.cta-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.cta-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Sección de contacto */
+.contact-info {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+.artistic-text {
+    font-family: 'Arial', sans-serif; /* Puedes cambiar la fuente */
+    font-size: 40px; /* Tamaño grande */
+    color: #ceff47; /* Color de texto */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+}
+
+.highlight {
+    background-color: yellow; /* Resaltado con color de fondo */
+    color: black; /* Color de la letra al resaltarla */
+}
+.boton {
+    background-color:rgb(129, 255, 71); /* Color de fondo rojo anaranjado */
+    color: black; /* Texto en Negrita */
+    font-weight: bold; /* Negrita */
+    padding: 12px 24px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño del texto */
+    border: none; /* Sin bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano */
+    transition: background 0.3s ease; /* Efecto de transición */
+    text-decoration: none; /* Quitar subrayado si es enlace */
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color:rgb(204, 229, 61); /* Color más oscuro al pasar el mouse */
+}
